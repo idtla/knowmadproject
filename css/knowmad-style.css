@@ -846,6 +846,15 @@ footer a:hover {
     transition: all 0.4s ease;
 }
 
+/* Estilos específicos para logos blancos en modo claro */
+.logo-white-bg img {
+    filter: grayscale(100%) brightness(0.4);
+}
+
+.logo-white-bg:hover img {
+    filter: grayscale(0%) brightness(0.6) !important;
+}
+
 /* Estilos específicos para modo oscuro */
 :root.dark-mode .client-item {
     background-color: rgba(41, 53, 64, 0.8);
