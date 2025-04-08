@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Knowmad Project</title>
+    <link rel="stylesheet" href="css/knowmad-style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo/favicon.png" type="image/png">
+    <!-- Cargar los componentes -->
+    <script type="module" src="js/components.js"></script>
+</head>
+<body>
+    <header class="blog-header">
+        <div class="container">
+            <h1>Blog Knowmad</h1>
+            <p>Exploramos tecnología, desarrollo web e inteligencia artificial con un enfoque práctico para el mundo real.</p>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar...">
+        <i class="fas fa-search search-icon"></i>
+        
+        <div class="filter-container" id="categoryFilters">
+            <div class="filter-tag active" data-category="all">Todos</div>
+            <!-- Las categorías se cargarán dinámicamente desde posts.json -->
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="blog-grid" id="blogGrid">
+            <!-- Las tarjetas de blog se cargarán dinámicamente desde posts.json -->
+            
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h2>No se encontraron resultados</h2>
+                <p>Intenta con otra búsqueda o categoría</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cargar el script del blog -->
+    <script src="js/blog.js"></script>
+</body>
+</html> 

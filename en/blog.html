@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Knowmad Project</title>
+    <link rel="stylesheet" href="../css/knowmad-style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+    <!-- Load components -->
+    <script type="module" src="../js/components.js"></script>
+</head>
+<body>
+    <header-component></header-component>
+    
+    <header class="blog-header">
+        <div class="container">
+            <h1>Knowmad Blog</h1>
+            <p>We explore technology, web development, and artificial intelligence with a practical approach for the real world.</p>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <i class="fas fa-search search-icon"></i>
+        
+        <div class="filter-container" id="categoryFilters">
+            <div class="filter-tag active" data-category="all">All</div>
+            <!-- Categories will be loaded dynamically from posts.json -->
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="no-posts-message">
+            <i class="fas fa-language"></i>
+            <h2>No posts available in English yet</h2>
+            <p>We're working on translating our content. Meanwhile, you can read our posts in Spanish.</p>
+            <a href="/blog.html" class="language-redirect" id="languageRedirectLink">
+                <img src="../images/lang/usa_en.png" alt="Español">
+                <span>View posts in Spanish</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Load blog script -->
+    <script src="../js/blog.js"></script>
+    
+    <script>
+        // Mantener la preferencia de tema al cambiar de idioma
+        document.addEventListener('DOMContentLoaded', function() {
+            const redirectLink = document.getElementById('languageRedirectLink');
+            if (redirectLink) {
+                const isDarkMode = document.documentElement.classList.contains('dark-mode');
+                const currentUrl = redirectLink.getAttribute('href');
+                // Agregar parámetro para mantener el tema
+                redirectLink.setAttribute('href', `${currentUrl}${currentUrl.includes('?') ? '&' : '?'}theme=${isDarkMode ? 'dark' : 'light'}`);
+            }
+        });
+    </script>
+</body>
+</html> 

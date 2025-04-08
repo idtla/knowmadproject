@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": "ia-manus",
+      "title": "Manus IA: la nueva inteligencia artificial autónoma que ejecuta tareas por ti",
+      "description": "Descubre Manus, el agente de IA autónomo que ejecuta tareas complejas sin supervisión. Aprende cómo funciona esta revolucionaria herramienta y sus aplicaciones prácticas en análisis, investigación y programación.",
+      "date": "2024-06-15",
+      "category": "Inteligencia Artificial",
+      "author": "Knowmad Project",
+      "image": "images/blog/manus-nueva-ia.png",
+      "url": "blog-ia-manus-nueva-ia-autonoma.html",
+      "language": "es"
+    },
+    {
+      "id": "web-estaticas-vs-cms",
+      "title": "Páginas web estáticas vs CMS (WordPress): diferencias, ventajas y rendimiento",
+      "description": "Descubre cuándo elegir una web estática o un CMS como WordPress según tus necesidades. Analizamos rendimiento, seguridad, facilidad de uso y SEO para ayudarte a tomar la mejor decisión.",
+      "date": "2024-04-12",
+      "category": "Desarrollo Web",
+      "author": "Knowmad Project",
+      "image": "images/blog/estaticas-vs-cms.png",
+      "url": "blog-web-estaticas-vs-cms.html",
+      "language": "es"
+    },
+    {
+      "id": "generador-imagenes-openai",
+      "title": "Todo sobre el nuevo generador de imágenes de OpenAI: ventajas, edición y prompts efectivos",
+      "description": "Conoce el revolucionario generador de imágenes basado en GPT-4o de OpenAI. Descubre cómo crear imágenes de alta calidad directamente en ChatGPT y aprende a escribir prompts efectivos.",
+      "date": "2024-05-30",
+      "category": "Inteligencia Artificial",
+      "author": "Knowmad Project",
+      "image": "images/blog/generador-imagenes-openai-gpt4o.png",
+      "url": "blog-generador-imagenes-openai.html",
+      "language": "es"
+    }
+  ],
+  "categories": [
+    "Desarrollo Web",
+    "Inteligencia Artificial",
+    "Web Development",
+    "Artificial Intelligence"
+  ]
+} 
