@@ -171,6 +171,81 @@ class HeaderComponent extends HTMLElement {
                     filter: brightness(0) invert(1);
                 }
 
+                /* Ajustes para tablet y dispositivos medianos */
+                @media (max-width: 1240px) {
+                    .navbar {
+                        width: 100%;
+                        top: 0;
+                        padding: 10px;
+                    }
+
+                    .nav-container {
+                        border-radius: 0;
+                    }
+                    
+                    .nav-menu {
+                        position: static;
+                        transform: none;
+                        width: auto;
+                        justify-content: center;
+                    }
+                }
+
+                /* Ajustes específicos para resoluciones problemáticas */
+                @media (max-width: 1024px) {
+                    .nav-menu {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding: 5px 0;
+                        gap: 0;
+                    }
+                    
+                    .nav-item {
+                        margin: 5px 5px;
+                    }
+                    
+                    .nav-item a {
+                        font-size: 0.9rem;
+                        padding: 4px 8px;
+                    }
+                }
+
+                /* Solución específica para móviles alrededor de 770px */
+                @media (max-width: 800px) and (min-width: 769px) {
+                    .nav-container {
+                        flex-direction: column;
+                        padding: 10px;
+                    }
+                    
+                    .logo-container {
+                        margin-bottom: 5px;
+                        width: auto;
+                    }
+                    
+                    .nav-menu {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        width: 100%;
+                        padding: 0;
+                        gap: 0;
+                    }
+                    
+                    .nav-item {
+                        margin: 2px;
+                    }
+                    
+                    .nav-item a {
+                        font-size: 0.8rem;
+                        padding: 3px 5px;
+                    }
+                    
+                    .controls-container {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+                }
+
                 @media (max-width: 768px) {
                     .navbar {
                         width: 100%;
@@ -180,10 +255,68 @@ class HeaderComponent extends HTMLElement {
 
                     .nav-container {
                         border-radius: 0;
+                        flex-direction: column;
+                        padding: 10px;
+                    }
+                    
+                    .logo-container {
+                        width: auto;
+                        margin-bottom: 8px;
                     }
 
                     .nav-menu {
-                        display: none;
+                        position: static;
+                        transform: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        justify-content: center;
+                        padding: 0;
+                        gap: 0;
+                    }
+                    
+                    .nav-item {
+                        margin: 4px;
+                    }
+                    
+                    .nav-item a {
+                        font-size: 0.9rem;
+                        padding: 3px 6px;
+                    }
+                    
+                    .controls-container {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .nav-item {
+                        margin: 3px;
+                    }
+                    
+                    .nav-item a {
+                        font-size: 0.8rem;
+                        padding: 3px 5px;
+                    }
+                    
+                    .language-switch img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    
+                    .theme-switch {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    
+                    .theme-switch i {
+                        font-size: 1rem;
+                    }
+                    
+                    .controls-container {
+                        gap: 8px;
                     }
                 }
             </style>

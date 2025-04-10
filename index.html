@@ -3,41 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
     <title>Knowmad Project - Desarrollo web y tecnología</title>
+    <meta name="description" content="Knowmad Project ofrece soluciones digitales adaptadas a necesidades reales: desarrollo web, SEO técnico, gestión de proyectos digitales y optimización de presencia online.">
+    <meta name="keywords" content="desarrollo web, tecnología, páginas web estáticas, SEO técnico, diseño web, proyectos digitales, Knowmad, presencia digital, optimización web">
+    <meta name="author" content="Knowmad Project">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://knowmadproject.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://knowmadproject.com/">
+    <meta property="og:title" content="Knowmad Project - Tecnología que entiende personas">
+    <meta property="og:description" content="No seguimos fórmulas, leemos contextos. No ofrecemos paquetes, construimos soluciones adaptadas a necesidades reales. Desarrollo web, SEO y gestión digital.">
+    <meta property="og:image" content="https://knowmadproject.com/images/knowmad-og-image.jpg">
+    <meta property="og:site_name" content="Knowmad Project">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@knowmadproject">
+    <meta name="twitter:title" content="Knowmad Project - Tecnología que entiende personas">
+    <meta name="twitter:description" content="Soluciones digitales adaptadas a necesidades reales: desarrollo web, SEO técnico y gestión de proyectos tecnológicos para negocios y emprendedores.">
+    <meta name="twitter:image" content="https://knowmadproject.com/images/knowmad-og-image.jpg">
+    <meta name="twitter:creator" content="@knowmadproject">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://knowmadproject.com",
+      "logo": "https://knowmadproject.com/images/logo/logo.png",
+      "name": "Knowmad Project",
+      "description": "Soluciones digitales adaptadas a necesidades reales: desarrollo web, SEO técnico y gestión de proyectos tecnológicos.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ES"
+      },
+      "sameAs": [
+        "https://twitter.com/knowmadproject",
+        "https://www.linkedin.com/company/knowmad-project",
+        "https://t.me/knowmadproject"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://knowmadproject.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://knowmadproject.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Optimización para navegadores y dispositivos -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconexiones para optimizar velocidad -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" href="images/hero-video.mp4" as="video" type="video/mp4">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/knowmad-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo/favicon.png">
     <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+    <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
+    
+    <!-- Alternativas de idioma -->
+    <link rel="alternate" href="https://knowmadproject.com/" hreflang="es">
+    <link rel="alternate" href="https://knowmadproject.com/en/" hreflang="en">
+    
     <!-- Cargar los componentes -->
     <script type="module" src="js/components.js"></script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <header>
-        <video class="hero-video" autoplay muted loop>
+        <video class="hero-video" autoplay muted loop playsinline>
             <source src="images/hero-video.mp4" type="video/mp4">
         </video>
         <div class="container">
-            <h1>Tecnología que entiende personas</h1>
-            <p class="subtitle">No seguimos fórmulas, leemos contextos. No ofrecemos paquetes, construimos soluciones adaptadas a necesidades reales.</p>
+            <h1 itemprop="headline">Tecnología que entiende personas</h1>
+            <p class="subtitle" itemprop="description">No seguimos fórmulas, leemos contextos. No ofrecemos paquetes, construimos soluciones adaptadas a necesidades reales.</p>
         </div>
     </header>
 
-    <div class="container">
-        <article id="quienes-somos" class="feature-section">
+    <div class="container" itemprop="mainContentOfPage">
+        <article id="quienes-somos" class="feature-section" itemprop="about" itemscope itemtype="https://schema.org/AboutPage">
             <div class="feature-content">
                 <div class="tag productivity">FILOSOFÍA</div>
-                <h2>Filosofía Knowmad</h2>
-                <p>En un mundo donde todo se acelera, especializa y etiqueta, <strong>KNOWMAD PORJECT</strong> nace como una respuesta distinta. No somos una agencia tradicional, ni una consultora al uso.</p>
-                <p>La palabra "KNOWMAD" define a quienes viven del conocimiento y se mueven con libertad entre disciplinas, herramientas y equipos. Personas que entienden la tecnología sin ser robots, que saben conectar lo técnico con lo humano.</p>
-                <ol class="steps">
-                    <li>Trabajamos con lógica, pero también con intuición.</li>
-                    <li>Con datos, pero también con escucha.</li>
-                    <li>Con procesos, pero también con personas.</li>
-                </ol>
+                <h2 itemprop="name">Filosofía Knowmad</h2>
+                <div itemprop="text">
+                    <p>En un mundo donde todo se acelera, especializa y etiqueta, <strong>KNOWMAD PROJECT</strong> nace como una respuesta distinta. No somos una agencia tradicional, ni una consultora al uso.</p>
+                    <p>La palabra "KNOWMAD" define a quienes viven del conocimiento y se mueven con libertad entre disciplinas, herramientas y equipos. Personas que entienden la tecnología sin ser robots, que saben conectar lo técnico con lo humano.</p>
+                    <ol class="steps">
+                        <li>Trabajamos con lógica, pero también con intuición.</li>
+                        <li>Con datos, pero también con escucha.</li>
+                        <li>Con procesos, pero también con personas.</li>
+                    </ol>
+                </div>
             </div>
             <div class="feature-image">
-                <img src="images/brand.background.png" alt="Filosofía Knowmad">
+                <img src="images/brand.background.png" alt="Filosofía Knowmad" loading="lazy">
             </div>
         </article>
 
@@ -55,127 +133,141 @@
             </div>
         </div>
 
-        <article id="servicios" class="feature-section">
-            <div class="feature-content">
-                <div class="tag mobile">SERVICIOS</div>
-                <h2>Impulsamos proyectos digitales desde cero</h2>
-                <p>Acompañamos a emprendedores, negocios y equipos que necesitan empezar desde una idea o un deseo.</p>
-                <p>Desde la estrategia hasta la ejecución. Desde el concepto hasta el producto final.</p>
-                <ol class="steps">
-                    <li>Dirección de proyecto digital.</li>
-                    <li>Definición de necesidades y recursos.</li>
-                    <li>Selección y coordinación de equipos.</li>
-                </ol>
-            </div>
-            <div class="feature-image">
-                <img src="images/impulsamosproyectos.png" alt="Impulsar proyectos">
-            </div>
-        </article>
+        <section id="servicios" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="serviceType" content="Desarrollo web y tecnología">
+            <article class="feature-section">
+                <div class="feature-content">
+                    <div class="tag mobile">SERVICIOS</div>
+                    <h2 itemprop="name">Impulsamos proyectos digitales desde cero</h2>
+                    <div itemprop="description">
+                        <p>Acompañamos a emprendedores, negocios y equipos que necesitan empezar desde una idea o un deseo.</p>
+                        <p>Desde la estrategia hasta la ejecución. Desde el concepto hasta el producto final.</p>
+                        <ol class="steps">
+                            <li>Dirección de proyecto digital.</li>
+                            <li>Definición de necesidades y recursos.</li>
+                            <li>Selección y coordinación de equipos.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="images/impulsamosproyectos.png" alt="Impulsar proyectos" loading="lazy" itemprop="image">
+                </div>
+            </article>
 
-        <article class="feature-section">
-            <div class="feature-content">
-                <div class="tag performance">SERVICIOS</div>
-                <h2>Diseñamos tu presencia digital con criterio</h2>
-                <p>No hacemos webs bonitas. Hacemos webs claras, funcionales y alineadas con tus objetivos.</p>
-                <p>Posicionamiento real (SEO técnico y estratégico), arquitectura de contenidos, velocidad, accesibilidad y mantenimiento.</p>
-                <ol class="steps">
-                    <li>Webs estáticas (HTML/CSS, CMS cuando tiene sentido).</li>
-                    <li>SEO técnico y estructural.</li>
-                    <li>Optimización de rendimiento y UX.</li>
-                </ol>
-            </div>
-            <div class="feature-image">
-                <img src="images/presenciadigital.png" alt="Presencia Digital">
-            </div>
-        </article>
+            <article class="feature-section">
+                <div class="feature-content">
+                    <div class="tag performance">SERVICIOS</div>
+                    <h2 itemprop="name">Diseñamos tu presencia digital con criterio</h2>
+                    <div itemprop="description">
+                        <p>No hacemos webs bonitas. Hacemos webs claras, funcionales y alineadas con tus objetivos.</p>
+                        <p>Posicionamiento real (SEO técnico y estratégico), arquitectura de contenidos, velocidad, accesibilidad y mantenimiento.</p>
+                        <ol class="steps">
+                            <li>Webs estáticas (HTML/CSS, CMS cuando tiene sentido).</li>
+                            <li>SEO técnico y estructural.</li>
+                            <li>Optimización de rendimiento y UX.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="images/presenciadigital.png" alt="Presencia Digital" loading="lazy" itemprop="image">
+                </div>
+            </article>
 
-        <article class="feature-section">
-            <div class="feature-content">
-                <div class="tag productivity">SERVICIOS</div>
-                <h2>Conectamos tecnología con personas</h2>
-                <p>Implementamos las herramientas que tu negocio necesita. Ni más ni menos.</p>
-                <p>Organizamos flujos de trabajo, centralizamos la comunicación, evitamos el caos digital.</p>
-                <ol class="steps">
-                    <li>Google Workspace y herramientas colaborativas.</li>
-                    <li>Organización de equipos y documentación.</li>
-                    <li>Sistemas de gestión interna adaptados a tu flujo.</li>
-                </ol>
-            </div>
-            <div class="feature-image">
-                <img src="images/conectamostecnologia.png" alt="Conectamos Tecnología">
-            </div>
-        </article>
+            <article class="feature-section">
+                <div class="feature-content">
+                    <div class="tag productivity">SERVICIOS</div>
+                    <h2 itemprop="name">Conectamos tecnología con personas</h2>
+                    <div itemprop="description">
+                        <p>Implementamos las herramientas que tu negocio necesita. Ni más ni menos.</p>
+                        <p>Organizamos flujos de trabajo, centralizamos la comunicación, evitamos el caos digital.</p>
+                        <ol class="steps">
+                            <li>Google Workspace y herramientas colaborativas.</li>
+                            <li>Organización de equipos y documentación.</li>
+                            <li>Sistemas de gestión interna adaptados a tu flujo.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="images/conectamostecnologia.png" alt="Conectamos Tecnología" loading="lazy" itemprop="image">
+                </div>
+            </article>
+        </section>
 
         <!-- Sección de Productos -->
-        <section id="productos" class="products-module">
+        <section id="productos" class="products-module" itemscope itemtype="https://schema.org/ItemList">
+            <meta itemprop="itemListOrder" content="Unordered">
+            <meta itemprop="numberOfItems" content="3">
             <div class="products-background"></div>
-            <h2 class="section-title">Nuestros Productos</h2>
+            <h2 class="section-title" itemprop="name">Nuestros Productos</h2>
             <p class="section-subtitle">Soluciones específicas para necesidades concretas</p>
             
             <div class="product-accordion">
-                <div class="product-slide active" data-index="0">
+                <div class="product-slide active" data-index="0" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <meta itemprop="position" content="1">
                     <div class="product-header">
                         <div class="product-icon">
                             <i class="fas fa-file-code"></i>
                         </div>
-                        <h3>Páginas Web Estáticas</h3>
+                        <h3 itemprop="name">Páginas Web Estáticas</h3>
                         <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
                     </div>
                     <div class="product-content">
-                        <p class="product-description">Sitios web sencillos pero potentes, con alta velocidad de carga, excelente SEO y mínimo mantenimiento.</p>
+                        <p class="product-description" itemprop="description">Sitios web sencillos pero potentes, con alta velocidad de carga, excelente SEO y mínimo mantenimiento.</p>
                         <ul class="product-features">
                             <li>Diseño moderno y responsive</li>
                             <li>Optimizadas para buscadores</li>
                             <li>Rápidas y ligeras</li>
                             <li>Sin costes de mantenimiento</li>
                         </ul>
-                        <a href="https://t.me/kNowmad_contactbot?text=Hola%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20las%20p%C3%A1ginas%20web%20est%C3%A1ticas" class="product-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/kNowmad_contactbot?text=Hola%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20las%20p%C3%A1ginas%20web%20est%C3%A1ticas" class="product-link" itemprop="url">Saber más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-indicator"></div>
                     </div>
                 </div>
                 
-                <div class="product-slide" data-index="1">
+                <div class="product-slide" data-index="1" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <meta itemprop="position" content="2">
                     <div class="product-header">
                         <div class="product-icon">
                             <i class="fab fa-telegram"></i>
                         </div>
-                        <h3>Bot de Telegram para Blogs</h3>
+                        <h3 itemprop="name">Bot de Telegram para Blogs</h3>
                         <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
                     </div>
                     <div class="product-content">
-                        <p class="product-description">Genera contenido para tu sitio estático directamente desde Telegram. Actualiza tu blog sin complicaciones técnicas.</p>
+                        <p class="product-description" itemprop="description">Genera contenido para tu sitio estático directamente desde Telegram. Actualiza tu blog sin complicaciones técnicas.</p>
                         <ul class="product-features">
                             <li>Publicación desde cualquier dispositivo</li>
                             <li>Sistema de aprobación de contenidos</li>
                             <li>Automatización de publicaciones</li>
                             <li>Generación de imágenes</li>
                         </ul>
-                        <a href="https://t.me/kNowmad_contactbot?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20bot%20de%20Telegram%20para%20blogs" class="product-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/kNowmad_contactbot?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20bot%20de%20Telegram%20para%20blogs" class="product-link" itemprop="url">Saber más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-indicator"></div>
                     </div>
                 </div>
                 
-                <div class="product-slide" data-index="2">
+                <div class="product-slide" data-index="2" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <meta itemprop="position" content="3">
                     <div class="product-header">
                         <div class="product-icon">
                             <i class="fas fa-tasks"></i>
                         </div>
-                        <h3>Gestor de Webs Estáticas</h3>
+                        <h3 itemprop="name">Gestor de Webs Estáticas</h3>
                         <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
                     </div>
                     <div class="product-content">
-                        <p class="product-description">Panel de administración simplificado para gestionar el contenido de tu web estática sin conocimientos técnicos.</p>
+                        <p class="product-description" itemprop="description">Panel de administración simplificado para gestionar el contenido de tu web estática sin conocimientos técnicos.</p>
                         <ul class="product-features">
                             <li>Interfaz intuitiva y sencilla</li>
                             <li>Editor visual de contenidos</li>
                             <li>Gestión de imágenes y archivos</li>
                             <li>Estadísticas básicas</li>
                         </ul>
-                        <a href="https://t.me/kNowmad_contactbot?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20el%20gestor%20de%20webs%20est%C3%A1ticas" class="product-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/kNowmad_contactbot?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20el%20gestor%20de%20webs%20est%C3%A1ticas" class="product-link" itemprop="url">Saber más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-indicator"></div>

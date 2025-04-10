@@ -3,20 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
     <title>Todo sobre el nuevo generador de imágenes de OpenAI: ventajas, edición y prompts efectivos | Knowmad Project</title>
+    <meta name="description" content="Guía completa del nuevo generador de imágenes en ChatGPT con GPT-4o: características, ventajas sobre DALL·E, consejos para prompts efectivos y funciones de edición multiturno.">
+    <meta name="keywords" content="generador de imágenes OpenAI, GPT-4o imágenes, IA generativa, prompts efectivos, edición de imágenes IA, ChatGPT vs DALL·E, AI image generation, IA multimodal">
+    <meta name="author" content="Knowmad Project">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://knowmadproject.com/blog-generador-imagenes-openai.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://knowmadproject.com/blog-generador-imagenes-openai.html">
+    <meta property="og:title" content="Nuevo generador de imágenes de OpenAI: guía completa y ventajas">
+    <meta property="og:description" content="Todo sobre el nuevo sistema integrado en ChatGPT para generar imágenes con GPT-4o: cómo usarlo, ventajas respecto a DALL·E y consejos para prompts efectivos.">
+    <meta property="og:image" content="https://knowmadproject.com/images/blog/generador-imagenes-openai-gpt4o.png">
+    <meta property="og:site_name" content="Knowmad Project">
+    <meta property="article:published_time" content="2024-05-30T12:00:00+00:00">
+    <meta property="article:section" content="Inteligencia Artificial">
+    <meta property="article:tag" content="OpenAI, generador de imágenes, IA, ChatGPT, GPT-4o">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@knowmadproject">
+    <meta name="twitter:title" content="Guía completa del nuevo generador de imágenes integrado en ChatGPT">
+    <meta name="twitter:description" content="Descubre cómo el nuevo generador de GPT-4o en ChatGPT ofrece creación y edición de imágenes más ágil, contextual y con mejor representación de texto.">
+    <meta name="twitter:image" content="https://knowmadproject.com/images/blog/generador-imagenes-openai-gpt4o.png">
+    <meta name="twitter:creator" content="@knowmadproject">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://knowmadproject.com/blog-generador-imagenes-openai.html"
+      },
+      "headline": "Todo sobre el nuevo generador de imágenes de OpenAI: ventajas, edición y prompts efectivos",
+      "description": "Guía completa del nuevo generador de imágenes en ChatGPT con GPT-4o: características, ventajas sobre DALL·E, consejos para prompts efectivos y funciones de edición multiturno.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://knowmadproject.com/images/blog/generador-imagenes-openai-gpt4o.png",
+        "width": "1200",
+        "height": "630"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Knowmad Project",
+        "url": "https://knowmadproject.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Knowmad Project",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://knowmadproject.com/images/logo/logo.png",
+          "width": "180",
+          "height": "60"
+        }
+      },
+      "datePublished": "2024-05-30T12:00:00+00:00",
+      "dateModified": "2024-05-30T12:00:00+00:00",
+      "articleBody": "OpenAI ha lanzado una nueva herramienta integrada directamente en ChatGPT: un generador de imágenes basado en el modelo GPT-4o. Este avance no solo mejora la calidad visual, sino que también permite crear y editar imágenes directamente dentro del flujo conversacional, con mayor coherencia, precisión y velocidad.",
+      "keywords": "generador imágenes OpenAI, GPT-4o, ChatGPT, prompts efectivos, edición imágenes, DALL·E, IA generativa",
+      "articleSection": "Inteligencia Artificial"
+    }
+    </script>
+    
+    <!-- FAQPage Schema para las preguntas del artículo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son las características únicas del modelo GPT-4o para generar imágenes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GPT-4o es un modelo multimodal avanzado que puede generar imágenes dentro del propio chat, con respuestas casi instantáneas (320 ms), mejor representación de texto en imágenes, capacidad para manejar hasta 20 objetos distintos, opciones avanzadas de edición e integración total entre texto e imagen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es la generación de imágenes multiturno?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es una funcionalidad que permite crear una imagen, revisarla y refinarla en varias interacciones consecutivas, posibilitando ajustes progresivos, manteniendo coherencia entre versiones y permitiendo iteraciones conversacionales con lenguaje natural."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo se crean prompts efectivos para el generador de imágenes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un prompt efectivo debe especificar el sujeto principal (qué aparece), el entorno (dónde), el estilo y composición (estética), la iluminación, la acción o postura del sujeto, y permitir iteración para refinar resultados. Cuanto más específico sea, más ajustada será la imagen final."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son las diferencias entre el generador de ChatGPT y DALL·E?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La principal diferencia es que GPT-4o es multimodal (trabaja con texto, imágenes, audio y vídeo en un único flujo), permite edición multiturno aprovechando el contexto conversacional, mientras que DALL·E 3 se centra exclusivamente en crear imágenes de alta calidad pero con menos integración conversacional."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Optimización para navegadores y dispositivos -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconexiones para optimizar velocidad -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/knowmad-style.css">
     <link rel="stylesheet" href="css/post.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!-- Favicon -->
     <link rel="icon" href="images/logo/favicon.png" type="image/png">
+    
     <!-- Cargar los componentes -->
     <script type="module" src="js/components.js"></script>
 </head>
 <body>
     <main class="container">
-        <article class="blog-post">
+        <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+            <meta itemprop="datePublished" content="2024-05-30T12:00:00+00:00">
+            <meta itemprop="dateModified" content="2024-05-30T12:00:00+00:00">
+            <meta itemprop="author" content="Knowmad Project">
+            <meta itemprop="publisher" content="Knowmad Project">
+            
             <div class="blog-post-cover">
-                <img src="images/blog/generador-imagenes-openai-gpt4o.png" alt="Generador de imágenes de OpenAI GPT-4o">
+                <img src="images/blog/generador-imagenes-openai-gpt4o.png" alt="Generador de imágenes de OpenAI GPT-4o" itemprop="image">
                 <div class="blog-post-cover-overlay"></div>
                 <div class="blog-post-header">
                     <div class="blog-post-meta">
@@ -24,23 +150,23 @@
                         <span><i class="far fa-user"></i> <span id="post-author" data-post-id="generador-imagenes-openai">Knowmad Project</span></span>
                         <span><i class="far fa-folder"></i> <a href="/blog.html#inteligencia-artificial">Inteligencia Artificial</a></span>
                     </div>
-                    <h1 class="blog-post-title">Todo sobre el nuevo generador de imágenes de OpenAI: ventajas, edición y prompts efectivos</h1>
+                    <h1 class="blog-post-title" itemprop="headline">Todo sobre el nuevo generador de imágenes de OpenAI: ventajas, edición y prompts efectivos</h1>
                 </div>
             </div>
             
-            <div class="blog-post-content">
+            <div class="blog-post-content" itemprop="articleBody">
                 <p>OpenAI ha lanzado una nueva herramienta integrada directamente en ChatGPT: un <strong>generador de imágenes basado en el modelo GPT-4o</strong>. Este avance no solo mejora la calidad visual, sino que también permite crear y editar imágenes directamente dentro del flujo conversacional, con mayor coherencia, precisión y velocidad.</p>
                 
                 <p>Disponible para usuarios de varios planes —incluyendo una versión limitada para cuentas gratuitas— este nuevo sistema abre posibilidades interesantes tanto para usuarios creativos como profesionales del diseño, marketing o contenidos.</p>
                 
-                <h2 class="blog-heading">Características únicas del modelo GPT-4o</h2>
+                <h2 class="blog-heading" id="caracteristicas-gpt4o">Características únicas del modelo GPT-4o</h2>
                 <p>GPT-4o se presenta como un modelo <strong>multimodal</strong> avanzado, capaz de trabajar con texto, imágenes, audio y vídeo. Una de sus mayores novedades es que ahora <strong>puede generar imágenes dentro del propio chat</strong>, entendiendo el contexto y ofreciendo respuestas visuales adaptadas a la conversación.</p>
                 
                 <div class="highlight-box">
                     <p>GPT-4o entiende tanto lo que dices como cómo lo dices, y lo traduce en una imagen precisa y visualmente atractiva, sin necesidad de utilizar herramientas externas.</p>
                 </div>
                 
-                <h3 class="blog-subheading">¿Qué lo hace especial?</h3>
+                <h3 class="blog-subheading" id="que-lo-hace-especial">¿Qué lo hace especial?</h3>
                 <ul>
                     <li><strong>Respuestas casi instantáneas</strong>: genera imágenes con una latencia media de 320 milisegundos.</li>
                     <li><strong>Representación mejorada del texto</strong> dentro de las imágenes (carteles, etiquetas, etc.).</li>
@@ -50,31 +176,32 @@
                     <li><strong>Integración total entre texto e imagen</strong>, lo que permite resultados más creativos y fieles a lo que el usuario busca.</li>
                 </ul>
                 
-                <h2 class="blog-heading">Generación de imágenes multiturno</h2>
+                <h2 class="blog-heading" id="generacion-multiturno">Generación de imágenes multiturno</h2>
                 <p>Una de las funcionalidades más potentes de este nuevo sistema es la <strong>generación de imágenes multiturno</strong>. Es decir, puedes crear una imagen, revisarla y <strong>refinarla en varias interacciones</strong> consecutivas, como si estuvieras colaborando con un diseñador.</p>
                 
-                <blockquote>
+                <blockquote cite="https://knowmadproject.com/blog-generador-imagenes-openai.html">
                     🎨 Perfecto para crear personajes, productos o ambientes que evolucionen poco a poco en base a tu feedback.
                 </blockquote>
                 
-                <h3 class="blog-subheading">¿Qué permite esta función?</h3>
+                <h3 class="blog-subheading" id="que-permite-funcion">¿Qué permite esta función?</h3>
                 <ul>
                     <li><strong>Ajustes progresivos</strong>: puedes modificar partes específicas sin rehacer toda la imagen.</li>
                     <li><strong>Coherencia entre versiones</strong>: ideal para diseño de personajes, escenas o escenarios complejos.</li>
                     <li><strong>Iteraciones conversacionales</strong>: todo el proceso se desarrolla con lenguaje natural, sin comandos raros ni necesidad de saber código.</li>
                 </ul>
                 
-                <h2 class="blog-heading">Cómo crear prompts efectivos</h2>
+                <h2 class="blog-heading" id="prompts-efectivos">Cómo crear prompts efectivos</h2>
                 
                 <p>Como con cualquier IA generativa, el resultado depende en gran medida del <strong>prompt</strong> (la instrucción que le das). Aquí van algunas claves para conseguir imágenes potentes y ajustadas a tu idea:</p>
                 
                 <div class="table-container">
                     <table>
+                        <caption>Elementos clave para crear prompts efectivos en el generador de imágenes</caption>
                         <thead>
                             <tr>
-                                <th>Elemento del prompt</th>
-                                <th>Descripción</th>
-                                <th>Ejemplo</th>
+                                <th scope="col">Elemento del prompt</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Ejemplo</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -112,22 +239,25 @@
                     </table>
                 </div>
                 
-                <blockquote>
+                <blockquote cite="https://knowmadproject.com/blog-generador-imagenes-openai.html">
                     ✏️ Cuanto más específico seas, más ajustada a tu idea será la imagen final.
                 </blockquote>
                 
-                <h2 class="blog-heading">ChatGPT vs DALL·E: diferencias clave</h2>
-                <img src="images/blog/dall-evsgpt4o.png" alt="Comparativa entre ChatGPT y DALL·E">
+                <h2 class="blog-heading" id="chatgpt-vs-dalle">ChatGPT vs DALL·E: diferencias clave</h2>
+                <figure>
+                    <img src="images/blog/dall-evsgpt4o.png" alt="Comparativa entre ChatGPT y DALL·E" loading="lazy">
+                    <figcaption>Comparativa visual entre imágenes generadas por ChatGPT (GPT-4o) y DALL·E 3</figcaption>
+                </figure>
                 <p>Aunque tanto <strong>ChatGPT con GPT-4o</strong> como <strong>DALL·E</strong> son generadores de imágenes de OpenAI, sus enfoques técnicos y resultados varían notablemente.</p>
                 
-                <h3 class="blog-subheading">Diferencias fundamentales entre ambos generadores:</h3>
+                <h3 class="blog-subheading" id="diferencias-generadores">Diferencias fundamentales entre ambos generadores:</h3>
                 <ul>
                     <li><strong>Enfoque multimodal vs. especialización</strong>: GPT-4o está diseñado para manejar diferentes tipos de contenido (texto, imágenes, audio, etc.) en un único flujo de conversación. DALL·E 3, en cambio, se centra exclusivamente en crear imágenes de alta calidad a partir de descripciones textuales.</li>
                     <li><strong>Interacción nativa y edición multiturno</strong>: GPT-4o permite refinar imágenes paso a paso en la misma conversación, aprovechando el contexto acumulado. DALL·E 3, si bien ofrece herramientas de edición, funciona más de forma puntual, con menos integración conversacional.</li>
                     <li><strong>Uso según perfil de usuario</strong>: GPT-4o es ideal para quien necesita una herramienta versátil y conversacional. DALL·E 3 destaca más en casos donde se buscan imágenes complejas o con un estilo artístico muy definido, como ilustradores, creativos o diseñadores gráficos.</li>
                 </ul>
                 
-                <blockquote>
+                <blockquote cite="https://knowmadproject.com/blog-generador-imagenes-openai.html">
                     💡 Si buscas generar imágenes refinadas, con contexto, texto legible y capacidad de edición iterativa, <strong>GPT-4o en ChatGPT es la herramienta ganadora</strong>.
                 </blockquote>
                 
@@ -143,8 +273,62 @@
                 </div>
                 
                 <p>La clave está en probar, ajustar y experimentar. Cuanto mejor domines los prompts, mejores serán los resultados.</p>
+                
+                <div class="author-bio">
+                    <p>Este artículo fue escrito por el equipo de <a href="https://knowmadproject.com/about-us.html" rel="author">Knowmad Project</a>, especialistas en inteligencia artificial y nuevas tecnologías.</p>
+                </div>
+                
+                <nav class="post-navigation" aria-label="Más artículos relacionados">
+                    <h3>Artículos relacionados</h3>
+                    <ul>
+                        <li><a href="/blog-ia-midjourney-v6.html">Midjourney v6: Análisis de la nueva versión del generador de imágenes</a></li>
+                        <li><a href="/blog-ia-stable-diffusion.html">Guía de Stable Diffusion: instalación local y mejores modelos</a></li>
+                        <li><a href="/blog-ia-dalle3.html">DALL·E 3: Todo lo que debes saber sobre el modelo de OpenAI</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="share-buttons">
+                    <h3>Comparte este artículo</h3>
+                    <a href="https://twitter.com/intent/tweet?url=https://knowmadproject.com/blog-generador-imagenes-openai.html&text=Todo sobre el nuevo generador de imágenes de OpenAI" aria-label="Compartir en Twitter" rel="nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://knowmadproject.com/blog-generador-imagenes-openai.html" aria-label="Compartir en Facebook" rel="nofollow noopener" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://knowmadproject.com/blog-generador-imagenes-openai.html&title=Todo sobre el nuevo generador de imágenes de OpenAI&summary=Guía completa del nuevo generador de imágenes en ChatGPT con GPT-4o&source=Knowmad Project" aria-label="Compartir en LinkedIn" rel="nofollow noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
         </article>
     </main>
+    
+    <!-- Breadcrumbs estructurados -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://knowmadproject.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://knowmadproject.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Inteligencia Artificial",
+          "item": "https://knowmadproject.com/blog.html#inteligencia-artificial"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Generador de imágenes de OpenAI",
+          "item": "https://knowmadproject.com/blog-generador-imagenes-openai.html"
+        }
+      ]
+    }
+    </script>
 </body>
 </html> 

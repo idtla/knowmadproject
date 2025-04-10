@@ -4,43 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic SEO -->
     <title>Knowmad Project - Web Development and Technology</title>
+    <meta name="description" content="Knowmad Project offers tailored digital solutions: web development, technical SEO, digital project management and online presence optimization for businesses and entrepreneurs.">
+    <meta name="keywords" content="web development, technology, static websites, technical SEO, web design, digital projects, Knowmad, digital presence, web optimization">
+    <meta name="author" content="Knowmad Project">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://knowmadproject.com/en/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://knowmadproject.com/en/">
+    <meta property="og:title" content="Knowmad Project - Technology that understands people">
+    <meta property="og:description" content="We don't follow formulas, we read contexts. We don't offer packages, we build solutions tailored to real needs. Web development, SEO and digital management.">
+    <meta property="og:image" content="https://knowmadproject.com/images/knowmad-og-image.jpg">
+    <meta property="og:site_name" content="Knowmad Project">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@knowmadproject">
+    <meta name="twitter:title" content="Knowmad Project - Technology that understands people">
+    <meta name="twitter:description" content="Digital solutions tailored to real needs: web development, technical SEO and technology project management for businesses and entrepreneurs.">
+    <meta name="twitter:image" content="https://knowmadproject.com/images/knowmad-og-image.jpg">
+    <meta name="twitter:creator" content="@knowmadproject">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://knowmadproject.com",
+      "logo": "https://knowmadproject.com/images/logo/logo.png",
+      "name": "Knowmad Project",
+      "description": "Digital solutions tailored to real needs: web development, technical SEO and technology project management.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ES"
+      },
+      "sameAs": [
+        "https://twitter.com/knowmadproject",
+        "https://www.linkedin.com/company/knowmad-project",
+        "https://t.me/knowmadproject"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://knowmadproject.com/en/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://knowmadproject.com/en/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Browser and device optimization -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconnects for speed optimization -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" href="../images/hero-video.mp4" as="video" type="video/mp4">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/knowmad-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/logo/favicon.png">
     <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+    <link rel="apple-touch-icon" href="../images/logo/apple-touch-icon.png">
+    
+    <!-- Language alternatives -->
+    <link rel="alternate" href="https://knowmadproject.com/" hreflang="es">
+    <link rel="alternate" href="https://knowmadproject.com/en/" hreflang="en">
+    <link rel="alternate" href="https://knowmadproject.com/en/" hreflang="x-default">
+    
     <!-- Load components -->
     <script type="module" src="../js/components.js"></script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <header-component></header-component>
     
     <header>
-        <video class="hero-video" autoplay muted loop>
+        <video class="hero-video" autoplay muted loop playsinline>
             <source src="../images/hero-video.mp4" type="video/mp4">
         </video>
         <div class="container">
-            <h1>Technology that understands people</h1>
-            <p class="subtitle">We don't follow formulas, we read contexts. We don't offer packages, we build solutions tailored to real needs.</p>
+            <h1 itemprop="headline">Technology that understands people</h1>
+            <p class="subtitle" itemprop="description">We don't follow formulas, we read contexts. We don't offer packages, we build solutions tailored to real needs.</p>
         </div>
     </header>
 
-    <div class="container">
-        <article id="about-us" class="feature-section">
+    <div class="container" itemprop="mainContentOfPage">
+        <article id="about-us" class="feature-section" itemprop="about" itemscope itemtype="https://schema.org/AboutPage">
             <div class="feature-content">
                 <div class="tag productivity">PHILOSOPHY</div>
-                <h2>Knowmad Philosophy</h2>
-                <p>In a world where everything accelerates, specializes, and gets labeled, <strong>KNOWMAD PROJECT</strong> emerges as a different response. We're not a traditional agency, nor a conventional consulting firm.</p>
-                <p>The word "KNOWMAD" defines those who live from knowledge and move freely between disciplines, tools, and teams. People who understand technology without being robots, who know how to connect the technical with the human.</p>
-                <ol class="steps">
-                    <li>We work with logic, but also with intuition.</li>
-                    <li>With data, but also with listening.</li>
-                    <li>With processes, but also with people.</li>
-                </ol>
+                <h2 itemprop="name">Knowmad Philosophy</h2>
+                <div itemprop="text">
+                    <p>In a world where everything accelerates, specializes, and gets labeled, <strong>KNOWMAD PROJECT</strong> emerges as a different response. We're not a traditional agency, nor a conventional consulting firm.</p>
+                    <p>The word "KNOWMAD" defines those who live from knowledge and move freely between disciplines, tools, and teams. People who understand technology without being robots, who know how to connect the technical with the human.</p>
+                    <ol class="steps">
+                        <li>We work with logic, but also with intuition.</li>
+                        <li>With data, but also with listening.</li>
+                        <li>With processes, but also with people.</li>
+                    </ol>
+                </div>
             </div>
             <div class="feature-image">
-                <img src="../images/brand.background.png" alt="Knowmad Philosophy">
+                <img src="../images/brand.background.png" alt="Knowmad Philosophy" loading="lazy">
             </div>
         </article>
 
@@ -58,127 +137,141 @@
             </div>
         </div>
 
-        <article id="services" class="feature-section">
-            <div class="feature-content">
-                <div class="tag mobile">SERVICES</div>
-                <h2>We drive digital projects from scratch</h2>
-                <p>We accompany entrepreneurs, businesses, and teams that need to start from an idea or a desire.</p>
-                <p>From strategy to execution. From concept to final product.</p>
-                <ol class="steps">
-                    <li>Digital project management.</li>
-                    <li>Definition of needs and resources.</li>
-                    <li>Team selection and coordination.</li>
-                </ol>
-            </div>
-            <div class="feature-image">
-                <img src="../images/impulsamosproyectos.png" alt="Drive Projects">
-            </div>
-        </article>
+        <section id="services" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="serviceType" content="Web Development and Technology">
+            <article class="feature-section">
+                <div class="feature-content">
+                    <div class="tag mobile">SERVICES</div>
+                    <h2 itemprop="name">We drive digital projects from scratch</h2>
+                    <div itemprop="description">
+                        <p>We accompany entrepreneurs, businesses, and teams that need to start from an idea or a desire.</p>
+                        <p>From strategy to execution. From concept to final product.</p>
+                        <ol class="steps">
+                            <li>Digital project management.</li>
+                            <li>Definition of needs and resources.</li>
+                            <li>Team selection and coordination.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="../images/impulsamosproyectos.png" alt="Drive Projects" loading="lazy" itemprop="image">
+                </div>
+            </article>
 
-        <article class="feature-section">
-            <div class="feature-content">
-                <div class="tag performance">SERVICES</div>
-                <h2>We design your digital presence with criteria</h2>
-                <p>We don't make pretty websites. We make clear, functional websites aligned with your goals.</p>
-                <p>Real positioning (technical and strategic SEO), content architecture, speed, accessibility, and maintenance.</p>
-                <ol class="steps">
-                    <li>Static websites (HTML/CSS, CMS when it makes sense).</li>
-                    <li>Technical and structural SEO.</li>
-                    <li>Performance and UX optimization.</li>
-                </ol>
-            </div>
-            <div class="feature-image">
-                <img src="../images/presenciadigital.png" alt="Digital Presence">
-            </div>
-        </article>
+            <article class="feature-section">
+                <div class="feature-content">
+                    <div class="tag performance">SERVICES</div>
+                    <h2 itemprop="name">We design your digital presence with criteria</h2>
+                    <div itemprop="description">
+                        <p>We don't make pretty websites. We make clear, functional websites aligned with your goals.</p>
+                        <p>Real positioning (technical and strategic SEO), content architecture, speed, accessibility, and maintenance.</p>
+                        <ol class="steps">
+                            <li>Static websites (HTML/CSS, CMS when it makes sense).</li>
+                            <li>Technical and structural SEO.</li>
+                            <li>Performance and UX optimization.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="../images/presenciadigital.png" alt="Digital Presence" loading="lazy" itemprop="image">
+                </div>
+            </article>
 
-        <article class="feature-section">
-            <div class="feature-content">
-                <div class="tag productivity">SERVICES</div>
-                <h2>We connect technology with people</h2>
-                <p>We implement the tools your business needs. No more, no less.</p>
-                <p>We organize workflows, centralize communication, avoid digital chaos.</p>
-                <ol class="steps">
-                    <li>Google Workspace and collaborative tools.</li>
-                    <li>Team and documentation organization.</li>
-                    <li>Internal management systems adapted to your flow.</li>
-                </ol>
-            </div>
-            <div class="feature-image">
-                <img src="../images/conectamostecnologia.png" alt="Connect Technology">
-            </div>
-        </article>
+            <article class="feature-section">
+                <div class="feature-content">
+                    <div class="tag productivity">SERVICES</div>
+                    <h2 itemprop="name">We connect technology with people</h2>
+                    <div itemprop="description">
+                        <p>We implement the tools your business needs. No more, no less.</p>
+                        <p>We organize workflows, centralize communication, avoid digital chaos.</p>
+                        <ol class="steps">
+                            <li>Google Workspace and collaborative tools.</li>
+                            <li>Team and documentation organization.</li>
+                            <li>Internal management systems adapted to your flow.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="../images/conectamostecnologia.png" alt="Connect Technology" loading="lazy" itemprop="image">
+                </div>
+            </article>
+        </section>
 
         <!-- Products Section -->
-        <section id="products" class="products-module">
+        <section id="products" class="products-module" itemscope itemtype="https://schema.org/ItemList">
+            <meta itemprop="itemListOrder" content="Unordered">
+            <meta itemprop="numberOfItems" content="3">
             <div class="products-background"></div>
-            <h2 class="section-title">Our Products</h2>
+            <h2 class="section-title" itemprop="name">Our Products</h2>
             <p class="section-subtitle">Specific solutions for concrete needs</p>
             
             <div class="product-accordion">
-                <div class="product-slide active" data-index="0">
+                <div class="product-slide active" data-index="0" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <meta itemprop="position" content="1">
                     <div class="product-header">
                         <div class="product-icon">
                             <i class="fas fa-file-code"></i>
                         </div>
-                        <h3>Static Websites</h3>
+                        <h3 itemprop="name">Static Websites</h3>
                         <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
                     </div>
                     <div class="product-content">
-                        <p class="product-description">Simple but powerful websites with high loading speed, excellent SEO, and minimal maintenance.</p>
+                        <p class="product-description" itemprop="description">Simple but powerful websites with high loading speed, excellent SEO, and minimal maintenance.</p>
                         <ul class="product-features">
                             <li>Modern and responsive design</li>
                             <li>Optimized for search engines</li>
                             <li>Fast and lightweight</li>
                             <li>No maintenance costs</li>
                         </ul>
-                        <a href="https://t.me/kNowmad_contactbot" class="product-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/kNowmad_contactbot" class="product-link" itemprop="url">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-indicator"></div>
                     </div>
                 </div>
                 
-                <div class="product-slide" data-index="1">
+                <div class="product-slide" data-index="1" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <meta itemprop="position" content="2">
                     <div class="product-header">
                         <div class="product-icon">
                             <i class="fab fa-telegram"></i>
                         </div>
-                        <h3>Telegram Bot for Blogs</h3>
+                        <h3 itemprop="name">Telegram Bot for Blogs</h3>
                         <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
                     </div>
                     <div class="product-content">
-                        <p class="product-description">Generate content for your static site directly from Telegram. Update your blog without technical complications.</p>
+                        <p class="product-description" itemprop="description">Generate content for your static site directly from Telegram. Update your blog without technical complications.</p>
                         <ul class="product-features">
                             <li>Publish from any device</li>
                             <li>Content approval system</li>
                             <li>Automated publishing</li>
                             <li>Image generation</li>
                         </ul>
-                        <a href="https://t.me/kNowmad_contactbot" class="product-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/kNowmad_contactbot" class="product-link" itemprop="url">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-indicator"></div>
                     </div>
                 </div>
                 
-                <div class="product-slide" data-index="2">
+                <div class="product-slide" data-index="2" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <meta itemprop="position" content="3">
                     <div class="product-header">
                         <div class="product-icon">
                             <i class="fas fa-tasks"></i>
                         </div>
-                        <h3>Static Website Manager</h3>
+                        <h3 itemprop="name">Static Website Manager</h3>
                         <div class="expand-icon"><i class="fas fa-chevron-down"></i></div>
                     </div>
                     <div class="product-content">
-                        <p class="product-description">Simplified admin panel to manage your static website content without technical knowledge.</p>
+                        <p class="product-description" itemprop="description">Simplified admin panel to manage your static website content without technical knowledge.</p>
                         <ul class="product-features">
                             <li>Intuitive and simple interface</li>
                             <li>Visual content editor</li>
                             <li>Image and file management</li>
                             <li>Basic statistics</li>
                         </ul>
-                        <a href="https://t.me/kNowmad_contactbot" class="product-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://t.me/kNowmad_contactbot" class="product-link" itemprop="url">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-indicator"></div>
