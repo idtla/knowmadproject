@@ -32,11 +32,23 @@
       "image": "images/blog/generador-imagenes-openai-gpt4o.png",
       "url": "blog-generador-imagenes-openai.html",
       "language": "es"
+    },
+    {
+      "id": "aeo-optimizar-contenido",
+      "title": "AEO: Cómo optimizar tu contenido para motores de respuesta con IA",
+      "description": "Guía completa de Answer Engine Optimization (AEO): estrategias para optimizar contenido para motores de respuesta con IA como ChatGPT, Bard y Perplexity.",
+      "date": "2025-07-18",
+      "category": "SEO y SEM",
+      "author": "Knowmad Project",
+      "image": "images/blog/AEO-optimizar-contenido-motores-ia.png",
+      "url": "blog-aeo-optimizar-contenido-motores-ia.html",
+      "language": "es"
     }
   ],
   "categories": [
     "Desarrollo Web",
     "Inteligencia Artificial",
+    "SEO y SEM",
     "Web Development",
     "Artificial Intelligence"
   ]

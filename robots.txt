@@ -1,0 +1,70 @@
+# Robots.txt para Knowmad Project
+# Generado el 18 de julio de 2025
+
+# Permitir acceso a todos los bots de búsqueda
+User-agent: *
+Allow: /
+
+# Bloquear archivos y directorios innecesarios
+Disallow: /data/
+Disallow: /js/
+Disallow: /css/
+Disallow: /*.json$
+Disallow: /*.md$
+
+# Permitir específicamente algunos recursos importantes
+Allow: /css/knowmad-style.css
+Allow: /css/blog.css
+Allow: /css/post.css
+Allow: /js/components.js
+Allow: /images/
+
+# Configuración específica para diferentes bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Bots de IA y motores de respuesta
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Ubicación del sitemap
+Sitemap: https://knowmadproject.com/sitemap.xml
+
+# Información de contacto
+# Host: knowmadproject.com 

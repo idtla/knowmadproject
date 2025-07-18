@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Página principal -->
+    <url>
+        <loc>https://knowmadproject.com/</loc>
+        <lastmod>2025-07-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://knowmadproject.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://knowmadproject.com/en/"/>
+    </url>
+    
+    <!-- Versión en inglés de la página principal -->
+    <url>
+        <loc>https://knowmadproject.com/en/</loc>
+        <lastmod>2025-07-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://knowmadproject.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://knowmadproject.com/en/"/>
+    </url>
+    
+    <!-- Blog principal en español -->
+    <url>
+        <loc>https://knowmadproject.com/blog.html</loc>
+        <lastmod>2025-07-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Blog en inglés -->
+    <url>
+        <loc>https://knowmadproject.com/en/blog.html</loc>
+        <lastmod>2025-07-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Artículos del blog en español -->
+    <url>
+        <loc>https://knowmadproject.com/blog-aeo-optimizar-contenido-motores-ia.html</loc>
+        <lastmod>2025-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://knowmadproject.com/blog-ia-manus-nueva-ia-autonoma.html</loc>
+        <lastmod>2024-06-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://knowmadproject.com/blog-generador-imagenes-openai.html</loc>
+        <lastmod>2024-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://knowmadproject.com/blog-web-estaticas-vs-cms.html</loc>
+        <lastmod>2024-04-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset> 
