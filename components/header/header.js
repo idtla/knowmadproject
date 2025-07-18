@@ -332,11 +332,11 @@ class HeaderComponent extends HTMLElement {
                         </a>
                     </div>
                     <ul class="nav-menu">
-                        <li class="nav-item"><a href="${isEnglish ? '#about-us' : '#quienes-somos'}">${isEnglish ? 'About Us' : 'Quiénes Somos'}</a></li>
-                        <li class="nav-item"><a href="${isEnglish ? '#services' : '#servicios'}">${isEnglish ? 'Services' : 'Servicios'}</a></li>
-                        <li class="nav-item"><a href="${isEnglish ? '#products' : '#productos'}">${isEnglish ? 'Products' : 'Productos'}</a></li>
-                        <li class="nav-item"><a href="${isEnglish ? '#community' : '#comunidad'}">${isEnglish ? 'Community' : 'Comunidad'}</a></li>
-                        <li class="nav-item"><a href="#blog">Blog</a></li>
+                        <li class="nav-item"><a href="${isEnglish ? '/en/#about-us' : '/#quienes-somos'}">${isEnglish ? 'About Us' : 'Quiénes Somos'}</a></li>
+                        <li class="nav-item"><a href="${isEnglish ? '/en/#services' : '/#servicios'}">${isEnglish ? 'Services' : 'Servicios'}</a></li>
+                        <li class="nav-item"><a href="${isEnglish ? '/en/#products' : '/#productos'}">${isEnglish ? 'Products' : 'Productos'}</a></li>
+                        <li class="nav-item"><a href="${isEnglish ? '/en/#community' : '/#comunidad'}">${isEnglish ? 'Community' : 'Comunidad'}</a></li>
+                        <li class="nav-item"><a href="${isEnglish ? '/en/blog.html' : '/blog.html'}">Blog</a></li>
                     </ul>
                     <div class="controls-container">
                         <div class="language-switch">

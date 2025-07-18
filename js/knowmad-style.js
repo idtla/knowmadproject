@@ -542,8 +542,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     return;
                 }
                 
+                // Ordenar posts por fecha descendente (más reciente primero)
+                const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                
                 // Mostrar solo los 3 posts más recientes
-                const recentPosts = posts.slice(0, 3);
+                const recentPosts = sortedPosts.slice(0, 3);
                 
                 // Limpiar el contenedor
                 blogContainer.innerHTML = '';

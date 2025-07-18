@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         post.description.toLowerCase().includes(searchTerm.toLowerCase());
                     
                     return matchesCategory && matchesSearch;
-                });
+                }).sort((a, b) => new Date(b.date) - new Date(a.date)); // Ordenar por fecha descendente
                 
                 // Mostrar posts filtrados
                 if (filteredPosts.length === 0) {
